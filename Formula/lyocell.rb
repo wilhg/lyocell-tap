@@ -1,15 +1,15 @@
 class Lyocell < Formula
   desc "High-performance load testing tool (k6 clone) on Java 25 & GraalVM"
   homepage "https://github.com/wilhg/lyocell"
-  version "0.3.8"
+  version "0.4.10"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/wilhg/lyocell/releases/download/v0.3.8/lyocell-macos-aarch64"
-    sha256 "5e9436a8faea5aede2c0a215e0bd469ab50b14d2540f72f5f023f305d51329a8"
+    url "https://github.com/wilhg/lyocell/releases/download/v0.4.10/lyocell-macos-aarch64"
+    sha256 "3cbe7371714bdbf43d7607fec5ec2e6b96d9fffeb8ce4fd690808f6d8d12e897"
   elsif OS.linux?
-    url "https://github.com/wilhg/lyocell/releases/download/v0.3.8/lyocell-linux-amd64"
-    sha256 "179ebb11b969a1e047937f753d73c9c06c5e65bf27043ae12a686bd9b1296964"
+    url "https://github.com/wilhg/lyocell/releases/download/v0.4.10/lyocell-linux-amd64"
+    sha256 "e1a57418946f585dfe0c43bc5f5ea4ee9d0463a5a7582a0e8312e02fd31aa162"
   end
 
   def install
